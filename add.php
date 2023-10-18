@@ -1,6 +1,29 @@
 <?php
 
+    if(isset($_POST['submit'])){
+        
+        // Check email
+        if(empty($_POST['email'])){
+            echo 'A title is required </br>';
+        } else {
+            echo htmlspecialchars($_POST['email']);
+        }
 
+        // Check title
+        if(empty($_POST['title'])){
+            echo 'A title is required </br>';
+        } else {
+            echo htmlspecialchars($_POST['title']);
+        }
+        
+        // Check ingredients
+        if(empty($_POST['ingredients'])){
+            echo 'A title is required </br>';
+        } else {
+            echo htmlspecialchars($_POST['ingredients']);
+        }
+        
+    } // This is the end of post method
 
 ?>
 
@@ -12,7 +35,7 @@
 
     <section class="container grey-text">
         <h4 class="center">Add a Pizza</h4>
-        <form class="white" action="add.php" method="GET">
+        <form class="white" action="add.php" method="POST">
             <label>Your Email</label>
             <input type="text" name="email">
             <label>Pizza Title:</label>
