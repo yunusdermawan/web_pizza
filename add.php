@@ -4,7 +4,7 @@
         
         // Check email
         if(empty($_POST['email'])){
-            echo 'A title is required </br>';
+            echo 'An email is required </br>';
         } else {
             echo htmlspecialchars($_POST['email']);
         }
@@ -18,7 +18,7 @@
         
         // Check ingredients
         if(empty($_POST['ingredients'])){
-            echo 'A title is required </br>';
+            echo 'At least one ingredient is required </br>';
         } else {
             echo htmlspecialchars($_POST['ingredients']);
         }
