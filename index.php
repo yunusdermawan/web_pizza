@@ -1,11 +1,7 @@
 <?php
 
     // Create connection to db
-    $conn = mysqli_connect('localhost', 'pizza_admin', 'admin', 'pizza_db');
-
-    if(!$conn){
-        echo 'Connection error: ' . mysqli_connect_error();
-    }
+    include('config/db_connect.php');
 
     // Write the query
     $sql = 'SELECT * FROM pizzas ORDER BY created_at';
