@@ -43,7 +43,7 @@
                             </ul>
                         </div>
                         <div class="card-action right-align">
-                            <a href="#" class="brand-text">more info</a>
+                            <a href="details.php" class="brand-text">more info</a>
                         </div>
                     </div>
                 </div>
