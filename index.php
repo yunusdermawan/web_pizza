@@ -1,7 +1,7 @@
 <?php
 
     // Create connection to db
-    include('config/db_connect.php');
+    include('config\db_connect.php');
 
     // Write the query
     $sql = 'SELECT * FROM pizzas ORDER BY created_at';
@@ -26,32 +26,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <?php include('templates/header.php') ?>
+    <?php include('templates\header.php') ?>
 
-    <h4 class="center grey-text">Pizzas</h4>
-    <div class="container">
-        <div class="row">
-            <?php foreach($pizzas as $pizza): ?>
-                <div class="col s6 md3">
-                    <div class="card z-depth-0">
-                        <img src="img/pizza.png" class="pizza" alt="pizza image" style="">
-                        <div class="card-content center">
-                            <h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
-                            <ul>
-                                <?php foreach(explode(',', $pizza['ingredients']) as $ing): ?>
-                                    <li><?php echo htmlspecialchars($ing); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                        <div class="card-action right-align">
-                            <a href="details.php?id=<?php echo $pizza['id']; ?>" class="brand-text">more info</a>
+    <div class="container mt-16">
+        <div class="grid grid-cols-3">
+        <?php foreach($pizzas as $pizza): ?>
+            <div class="card w-96 bg-base-100 shadow-xl mb-10">
+                <figure class="mt-2"><img src="public\img\pizza.png" alt="Shoes" style="width: 200px" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                    <?php echo htmlspecialchars($pizza['title']); ?>
+                    <!-- Discount -->
+                    <?php if(($pizza['discount']) == 0): ?>
+                        <div class="hidden">Discount</div>
+                    <?php else: ?>
+                        <div class="badge badge-secondary">Discount <?php echo htmlspecialchars($pizza['discount']); ?></div>
+                    <?php endif; ?>
+                    </h2>
+                    <p><?php echo htmlspecialchars($pizza['description']); ?></p>
+                    <h5 class="border-t-2 mt-10 text-lg font-bold">Recipes:</h5>
+                    <p class="mb-4"><?php echo htmlspecialchars($pizza['ingredients']); ?></p>
+                    <div class="card-actions justify-end">
+                        <div class="card-actions">
+                            <button class="btn btn-warning">Add to Chart</button>
+                            <button class="btn btn-primary">Buy Now</button>
                         </div>
                     </div>
                 </div>
+            </div>
             <?php endforeach; ?>
         </div>
     </div>
 
-    <?php include('templates/footer.php') ?>
+    <?php include('templates\footer.php') ?>
     
 </html>

@@ -16,14 +16,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom's Pizza</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Toffra Pizza</title>
+    <!-- Icon Titile -->
+    <link rel="icon" type="image/x-icon" href="public\icons\favicon.png">
+
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+
     <style type="text/css">
         .brand {
             background: #cbb09c !important;
         }
-        .brand-text {
+        .brand-text, .nav-wrapper {
             color: #cbb09c !important;
         }
         form {
@@ -40,15 +44,35 @@
             top: -30px;
         }
     </style>
+    
 </head>
-    <body class="grey lighten-4">
-        <nav class="white z-depth-0">
-            <div class="container">
-                <a href="index.php" class="brand-logo brand-text">Dom's Pizza</a>
-                <ul id="nav-mobile" class="right hide-on-small-and-down">
-                    <li class="grey-text">Hello <?php echo htmlspecialchars($name); ?></li>
-                    <li class="grey-text">(<?php echo htmlspecialchars($gender); ?>)</li>
-                    <li><a href="add.php" class="btn brand z-depth-0">Add a Pizza</a></li>
-                </ul>
+    <body class="bg-gray-50">
+        
+        <!-- Dropdown Structure -->
+        <header class="bg-white" style="height: 100px; padding: 10px 100px 0 100px;">
+            <div class="navbar">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl"><img src="public\icons\logo.png" alt="Logo" style="width: 150px"></a>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a>Pizza</a></li>
+                    <li><a href="drink_prod.php">Drinks</a></li>
+                    <li><a>Orders</a></li>
+                    <li>
+                        <details>
+                        <summary>
+                            User
+                        </summary>
+                        <ul class="p-2 bg-base-100">
+                            <li><a>Profile</a></li>
+                            <li><a>Setting</a></li>
+                            <li><a>Log Out</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+        </header>
+        
