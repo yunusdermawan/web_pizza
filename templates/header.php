@@ -24,6 +24,10 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
         .brand {
             background: #cbb09c !important;
         }
@@ -52,11 +56,12 @@
         <header class="bg-white" style="height: 100px; padding: 10px 100px 0 100px;">
             <div class="navbar">
                 <div class="flex-1">
-                    <a class="btn btn-ghost normal-case text-xl"><img src="public\icons\logo.png" alt="Logo" style="width: 150px"></a>
+                    <a class="btn btn-ghost normal-case text-xl" href="index.php"><img src="public\icons\logo.png" alt="Logo" style="width: 150px"></a>
                 </div>
                 <div class="flex-none">
                     <ul class="menu menu-horizontal px-1">
-                    <li><a>Pizza</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="pizza_prod.php">Pizza</a></li>
                     <li><a href="drink_prod.php">Drinks</a></li>
                     <li><a>Orders</a></li>
                     <li>

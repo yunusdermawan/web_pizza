@@ -28,10 +28,10 @@
 
     <?php include('templates\header.php') ?>
 
-    <div class="container mt-16">
-        <div class="grid grid-cols-3">
+    <div class="container mt-16 mx-auto w-full justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
         <?php foreach($drinks as $drink): ?>
-            <div class="card w-96 bg-base-100 shadow-xl mb-10">
+            <div class="card w-96 bg-base-100 shadow-xl mb-10 mx-auto xl:mx-0">
                 <figure class="mt-2"><img src="public\img\drink.png" alt="Shoes" style="width: 200px" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
