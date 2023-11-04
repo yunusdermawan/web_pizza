@@ -68,7 +68,7 @@
             </div>
         </div>
         <div >
-            <div class="grid grid-cols-2 gap-10 px-32 py-24">
+            <div class="relative bg-[length:340px_270px] bg-[right_-6rem_bottom_-1rem] grid grid-cols-2 gap-10 px-32 py-24" style="background-image: url('/public/img/sub5.png'); background-repeat: no-repeat">
                 <div class="relative">
                     <img class="rounded-2xl" src="public\img\sub1.jpg" alt="" style="transform: scaleX(-1)">
                     <div class="absolute top-[-45px] left-[200px] w-[300px] ms-24 mt-16">
@@ -83,6 +83,9 @@
                         <div class="btn rounded-full w-[150px] bg-warning text-white mt-8"><a href="#">Order Now</a></div>
                     </div>
                 </div>
+                <!-- <div class="absolute bottom-10 right-0 -z-2">
+                    <img src="public\img\sub5.png" alt="" class="rotate-[220deg]" style="width: 350px">
+                </div> -->
             </div>
             <div>
                 
