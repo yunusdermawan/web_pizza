@@ -1,5 +1,5 @@
     <footer class="section">
-        <div class="center grey-text">Copyright 2023 Toffra Pizza</div>
+        <div class="text-center">Copyright 2023 Toffra Pizza</div>
     </footer>
 
     <!-- JQuery -->

@@ -50,34 +50,41 @@
     </style>
     
 </head>
-    <body class="bg-gray-50">
+    <body class="bg-gray-50" >
         
         <!-- Dropdown Structure -->
-        <header class="bg-white" style="height: 100px; padding: 10px 100px 0 100px;">
-            <div class="navbar">
-                <div class="flex-1">
+        <header class="bg-gray-50" style="height: 100px; padding: 10px 100px 120px 150px;">
+            <div class="navbar mt-4 sticky top-0">
+                <div class="flex-1 mt-[-10px]">
                     <a class="btn btn-ghost normal-case text-xl" href="index.php"><img src="public\icons\logo.png" alt="Logo" style="width: 150px"></a>
                 </div>
                 <div class="flex-none">
-                    <ul class="menu menu-horizontal px-1">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="pizza_prod.php">Pizza</a></li>
-                    <li><a href="drink_prod.php">Drinks</a></li>
-                    <li><a>Orders</a></li>
-                    <li>
-                        <details>
-                        <summary>
-                            User
-                        </summary>
-                        <ul class="p-2 bg-base-100">
-                            <li><a>Profile</a></li>
-                            <li><a>Setting</a></li>
-                            <li><a>Log Out</a></li>
-                        </ul>
-                        </details>
-                    </li>
+                    <ul class="menu menu-horizontal text-xl font-bold font-mono text-[#cbb09c] px-1 ">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="pizza_prod.php">Pizza</a></li>
+                        <li><a href="drink_prod.php">Drinks</a></li>
+                        <li><a>Orders</a></li>
+                        <li>
+                            <details>
+                            <summary>
+                                User
+                            </summary>
+                            <ul class="p-2 bg-base-100">
+                                <li><a>Profile</a></li>
+                                <li><a>Setting</a></li>
+                                <li><a>Log Out</a></li>
+                            </ul>
+                            </details>
+                        </li>
                     </ul>
                 </div>
             </div>
+            
         </header>
+
+        <main>
+            <div>
+                <div></div>
+            </div>
+        </main>
         
