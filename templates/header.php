@@ -23,16 +23,15 @@
     <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+
     <style type="text/css">
         * {
             margin: 0;
             padding: 0;
-        }
-        .brand {
-            background: #cbb09c !important;
-        }
-        .brand-text, .nav-wrapper {
-            color: #cbb09c !important;
         }
         form {
             max-width: 460px;
@@ -47,10 +46,13 @@
             position: relative;
             top: -30px;
         }
+        .font-format {
+            font-family: 'Playpen Sans', cursive;
+        }
     </style>
     
 </head>
-    <body class="bg-gray-50" >
+    <body class="bg-gray-50" style="height: 100vh">
         
         <!-- Dropdown Structure -->
         <header class="bg-gray-50" style="height: 100px; padding: 10px 100px 120px 150px;">
